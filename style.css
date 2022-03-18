@@ -1,0 +1,330 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+nav{
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    z-index:10;
+    
+}
+img{
+    width:10%;
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: 15px;
+  
+}
+.nav-right select{
+    margin-right: 25px;
+    padding:7px 17px;
+    font-size: .875rem;
+    background: rgba(0,0,0,.4);
+    color: white;
+}
+
+.nav-right a{
+    margin-right: 25px;
+    background-color: #e50914;
+    text-decoration: none;
+    padding:7px 17px;
+    color: white;
+    line-height: normal;
+    font-weight: 400;
+    border-radius: 2px;
+}
+.first-card-background{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100vh;
+    z-index: -1;
+    
+   
+}
+.first-card-background img{
+    width:100%;
+    height:100%;
+    margin: 0 0;
+    object-fit:cover;
+    
+   
+
+}
+
+.layout{
+    position: relative;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    min-height: 100vh;
+}
+
+.hero-card{
+    color:white;
+    text-align: center;
+    margin-top: 15%;
+}
+.hero-card h1 , .hero-card h2{
+    max-width:650px;
+    margin: 0 auto;
+}
+.hero-card h1 {
+    
+    font-size: 50px;
+    line-height: 1.1;
+}
+.hero-card h2 {
+    
+    font-size: 26px;
+}
+.hero-card h3 {
+    
+   padding: 10px 10px;;
+}
+.input{
+    display: flex;
+    justify-content:center;
+    gap:5px;
+    margin-top: 10px;
+    
+}
+.input input{
+    width: 450px;
+    height: 70px;
+    outline: none;
+}
+.input input::placeholder{
+    color: gray;
+    font-size: 150%;
+    padding: 10px 10px 10px;
+}
+.hero-card button{
+    background-color:red;
+    display: inline-block;
+    padding: 0 36px;
+    border : none;
+    height: 70px;
+    font-size : 26px;
+    color:white;
+}
+.hero-card button:hover{
+    background: #f40612;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    cursor: pointer;
+
+}
+.hero-card button:visited{
+    background: #f40612;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    cursor: pointer;
+
+}
+.hero-card button:active{
+    border: 1px solid red;
+    background: #bb0a12;
+   
+
+}
+.board-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-top: 8px solid #222;
+    margin-top:-4px;
+    padding: 70px 45px;
+}
+.board-1 h1, .board-1 h2{
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+.board-1 h1{
+    margin-bottom: 16px;
+    font-size: 45px;
+}
+.board-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-top: 8px solid #222;
+    margin-top:-4px;
+    padding: 70px 45px;
+    
+}
+.board-2 h1, .board-2 h2{
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+.board-2 h1{
+    margin-bottom: 16px;
+    font-size: 45px;
+}
+.board-2 img{
+    max-width: 100%;
+    height: 315px;
+    border: 0;
+}
+.board-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-top: 8px solid #222;
+    margin-top:-4px;
+    padding: 70px 45px;
+}
+.board-3 h1, .board-3 h2{
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+.board-3 h1{
+    margin-bottom: 16px;
+    font-size: 45px;
+}
+.board-3 img{
+    max-width: 55%;
+}
+.board-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-top: 8px solid #222;
+    margin-top:-4px;
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+    
+}
+.board-4 h1, .board-4 h2{
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+.board-4 h1{
+    margin-bottom: 16px;
+    font-size: 45px;
+}
+.board-4 img{
+    max-width: 100%;
+    height: 315px;
+    border: 0;
+    
+}
+.fqa-board{
+      
+    background-color: black;
+    border-top: 8px solid #222;
+    margin-top:-4px;
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+
+    
+
+}
+.fqa-board h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 35px;
+    text-align: center;
+    color:white;
+}
+
+.q-list{
+    list-style: none ;
+}
+.q-list button{
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    position: relative;
+    width: 70%;
+    border: 0;
+    text-align: left;
+    background: #303030;
+    color: white;
+    font-size:larger;
+}
+.fqa{
+    text-align: center;
+}
+.q-list p{
+    display: none;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+   
+    font-weight: 400;
+    
+    width: 100%;
+    border: 0;
+    text-align: left;
+    background: #303030;
+    color: white;
+    font-size:larger;
+
+}
+.q-list button:focus + p {
+   display:block;
+ 
+}
+.hidden{
+    color: white;
+}
+footer{
+    background-color: black;
+}
+footer p{
+    color:#757575;
+    text-align: left;
+    margin-left: 359px;
+    padding-top: 50px;
+    
+}
+footer ul {
+    display:inline-block;
+    margin: 30px;
+    list-style: none;
+    margin-top: -5px;
+   
+
+}
+footer ul li{
+    margin: 10px;
+    text-align: left;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#757575;
+}
+footer ul li a:hover{
+    border-bottom: 1px solid #757575;;
+
+}
+footer select{
+    margin-right: 25px;
+    padding:7px 17px;
+    font-size: .875rem;
+    background: rgba(0,0,0,.4);
+    color: white;
+    display: block;
+    margin-left: 360px;
+}
+
